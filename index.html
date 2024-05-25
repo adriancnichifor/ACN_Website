@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ACN Developer</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <!-- Font awsome icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="container row">
+        <button class="nav-toggle" aria-label="open navigation">
+          <span class="hamburger"></span>
+        </button>
+        <!-- <a class="logo" href="#home">ACN/> </a> -->
+        <a class="logo" href="#home">Adrian C. Nichifor </a>
+        <nav class="nav">
+          <ul class="nav__list nav__list--primary">
+            <li class="nav__item">
+              <a href="#home" class="nav__link">Home</a>
+            </li>
+            <li class="nav__item">
+              <a href="#about" class="nav__link">About</a>
+            </li>
+            <li class="nav__item">
+              <a href="#work" class="nav__link">My work</a>
+            </li>
+            <li class="nav__item">
+              <a href="#contact" class="nav__link nav__link--button"
+                >Let`s talk</a
+              >
+            </li>
+          </ul>
+          <ul class="nav__list nav__list--secondary">
+            <li class="nav__item">
+              <a
+                href="https://www.linkedin.com/in/adriancnichifor/"
+                target="_blank"
+                class="nav__link"
+                ><i class="fa-brands fa-linkedin-in"></i
+              ></a>
+            </li>
+            <li class="nav__item">
+              <a
+                href="https://github.com/adriancnichifor/"
+                target="_blank"
+                class="nav__link"
+                ><i class="fa-brands fa-github"></i
+              ></a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Hero section -->
+    <section class="hero" id="home">
+      <div class="container row">
+        <div class="hero__text">
+          <p class="hero_toptitle">Hey, I`m <strong>Adrian</strong></p>
+          <h1 class="hero_title">Junior Web Developer</h1>
+          <p class="hero_subtitle">
+            Enthusiast Web developer with<br />
+            a knack for problem-solving
+          </p>
+          <div>
+            <a href="ACN_CV.pdf" download="ACN_CV" class="btn">My CV</a>
+            <a href="#contact" class="btn">Let`s talk</a>
+          </div>
+        </div>
+        <div class="hero_logo">
+          <img
+            src="assets/acn-logo-zip-file/png/logo-no-background.png"
+            alt=""
+          />
+        </div>
+      </div>
+    </section>
+    <!-- End Hero section -->
+
+    <!-- About section -->
+    <section class="about" id="about">
+      <h2 class="section_toptitle">About</h2>
+      <h1 class="section_title container">Web developer journey</h1>
+      <div class="container row">
+        <div class="portret_container">
+          <img
+            src="assets/portret.jpg"
+            alt="portrait of Adrian Nichifor"
+            class="about__img"
+          />
+        </div>
+        <div class="text_container">
+          <p>
+            Proficient in HTML and CSS, with a focus on JavaScript, I thrive on
+            turning ideas into polished, responsive web applications. I'm an
+            open-minded, dedicated, and motivated person, always eager to learn
+            and bring my positive energy to any task. I am confident that I can
+            bring a proactive attitude and a desire to work on any project I am
+            involved in.
+          </p>
+          <!-- <p>
+            As a Web Developer, I am highly focused on delivering high-quality,
+            user-friendly web applications that meet the needs of clients and
+            end users.
+          </p> -->
+          <p>
+            In my spare time, you'll find me reading articles or watching videos
+            about technology, cooking, cycling, or spending time with my family.
+            These activities not only give me a much-needed break but also
+            inspire me to think creatively and approach problem-solving from
+            different perspectives.
+          </p>
+        </div>
+      </div>
+    </section>
+    <!-- End About section -->
+
+    <!-- My work section -->
+    <section class="container" id="work">
+      <h2 class="section_toptitle">My work</h2>
+      <div class="cards_container">
+        <div class="card">
+          <h3>CAMMI</h3>
+          <div class="card_body">
+            <img src="assets/cammi.png" alt="cammi screenshot" />
+            <p class="card_text">The master final project</p>
+            <div>
+              <a href="https://cammi.netlify.app/" target="_blank" class="btn"
+                ><span>Live</span>
+                <i class="fa-solid fa-up-right-from-square"></i
+              ></a>
+              <a
+                href="https://github.com/adriancnichifor/cammi"
+                target="_blank"
+                class="btn"
+                ><span>GitHub</span
+                ><i
+                  class="fa-solid fa-up-right-from-square"
+                  aria-hidden="true"
+                ></i
+              ></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="card">
+          <h3>Julie choregrapher</h3>
+          <div class="card_body">
+            <img src="assets/julie.png" alt="julie website screenshot" />
+            <p class="card_text">choregrapher website</p>
+            <div>
+              <a
+                target="_blank"
+                href="https://julie-dance.netlify.app/"
+                class="btn live"
+                ><span>Live</span>
+                <i class="fa-solid fa-up-right-from-square"></i
+              ></a>
+              <a
+                target="_blank"
+                href="https://github.com/adriancnichifor/Julie"
+                class="btn gh"
+              >
+                <span>GitHub</span
+                ><i
+                  class="fa-solid fa-up-right-from-square"
+                  aria-hidden="true"
+                ></i
+              ></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End My work section -->
+
+    <!-- Contact section -->
+    <section class="contact" id="contact">
+      <h2 class="section_toptitle">Contact</h2>
+      <div class="container row">
+        <p>
+          Ready to work with me?<br />
+          Let`s chat! ->
+        </p>
+
+        <p>
+          Phone: <br />
+          <a class="link" href="tel:+40752407798"
+            ><strong>+4 0752 407 798</strong></a
+          >
+        </p>
+        <p>
+          Email: <br />
+          <a class="link" href="mailto:adriancnichifor@gmail.com"
+            ><strong>adriancnichifor@gmail.com</strong></a
+          >
+        </p>
+      </div>
+    </section>
+
+    <!-- End Contact section -->
+
+    <!-- Footer -->
+    <footer id="footer" class="footer">
+      <p><strong>ACN</strong> | All rights reserved &copy; 2024</p>
+    </footer>
+
+    <script src="index.js"></script>
+  </body>
+</html>
