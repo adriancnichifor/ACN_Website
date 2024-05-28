@@ -88,6 +88,13 @@ p {
   color: var(--clr-light);
 }
 
+.light_text {
+  color: var(--clr-light);
+}
+.dark_text {
+  color: var(--clr-dark);
+}
+
 header {
   background-color: #171717;
   padding: 1em 0;
@@ -105,7 +112,7 @@ header {
   height: 3em;
   padding: 0em;
   border-radius: 50%;
-  background: var(--clr-yellow);
+  background: var(--clr-orange);
   color: var(--clr-light);
   transition: opacity 300ms ease;
   position: absolute;
@@ -224,7 +231,7 @@ header {
 /* About section style */
 
 .about {
-  background-color: #171717;
+  background-color: var(--clr-dark);
 }
 
 .section_toptitle {
@@ -237,7 +244,6 @@ header {
   text-align: center;
   line-height: 1.2;
   font-size: var(--fs-h2-s);
-  color: var(--clr-light);
   margin-bottom: 1rem;
 }
 
@@ -328,6 +334,7 @@ header {
 .footer {
   text-align: center;
   padding: 0.5em;
+  border-top: 2px solid var(--clr-yellow);
   background-color: var(--clr-dark);
 }
 
@@ -346,6 +353,9 @@ header {
     align-items: center;
     height: auto;
     position: relative;
+  }
+  .nav__list--secondary {
+    gap: 0;
   }
   .nav__list {
     display: flex;
@@ -391,6 +401,7 @@ header {
     grid-template-columns: repeat(2, 1fr);
     grid-column: span;
     gap: 10%;
+    padding: 2em 0;
   }
 
   .card_body {
@@ -398,7 +409,6 @@ header {
     flex-direction: column;
     justify-content: space-between;
   }
-
   /* .card {
     justify-self: center;
   } */
