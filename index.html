@@ -12,11 +12,15 @@
     />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <!-- Google Fonts -->
     <link
       href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="style.css" />
+    <!-- Swipers CSS -->
+    <link rel="stylesheet" href="css/swiper-bundle.min.css" />
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
     <header>
@@ -95,9 +99,7 @@
     <section class="about" id="about">
       <div class="container">
         <h3 class="section_toptitle">About</h3>
-        <h2 class="section_title container light_text">
-          Web developer journey
-        </h2>
+        <h2 class="section_title container dark_text">Web developer journey</h2>
         <div class="row">
           <div class="portret_container">
             <img
@@ -140,63 +142,231 @@
         <h2 class="section_title container dark_text">
           Things I've built so far
         </h2>
-        <div class="cards_container">
-          <div class="card">
-            <h3>CAMMI - Lawyer website</h3>
-            <div class="card_body">
-              <img src="assets/cammi.png" alt="cammi screenshot" />
-              <p class="card_text">
-                Made using Bootstrap, JavaScript, Firebase and Netlify to deploy
-              </p>
-              <div>
-                <a href="https://cammi.netlify.app/" target="_blank" class="btn"
-                  ><span>Live</span>
-                  <i class="fa-solid fa-up-right-from-square"></i
-                ></a>
-                <a
-                  href="https://github.com/adriancnichifor/cammi"
-                  target="_blank"
-                  class="btn"
-                  ><span>GitHub</span
-                  ><i
-                    class="fa-solid fa-up-right-from-square"
-                    aria-hidden="true"
-                  ></i
-                ></a>
-              </div>
-            </div>
-          </div>
+        <!-- cards swiper -->
+        <div class="swiper">
+          <div class="mySwiper">
+            <div class="card-wrapper swiper-wrapper">
+              <!-- Julie project -->
+              <div class="card swiper-slide">
+                <div class="image-content">
+                  <span class="overlay"></span>
 
-          <div class="card">
-            <h3>Julie choregrapher</h3>
-            <div class="card_body">
-              <img src="assets/julie.png" alt="julie website screenshot" />
-              <p class="card_text">
-                Made using HTML, CSS, JavaScript and Netlify to deploy
-              </p>
-              <div>
-                <a
-                  target="_blank"
-                  href="https://julie-dance.netlify.app/"
-                  class="btn live"
-                  ><span>Live</span>
-                  <i class="fa-solid fa-up-right-from-square"></i
-                ></a>
-                <a
-                  target="_blank"
-                  href="https://github.com/adriancnichifor/Julie"
-                  class="btn gh"
-                >
-                  <span>GitHub</span
-                  ><i
-                    class="fa-solid fa-up-right-from-square"
-                    aria-hidden="true"
-                  ></i
-                ></a>
+                  <div class="card-image">
+                    <img src="assets/julie.png" alt="" class="card-img" />
+                  </div>
+                </div>
+
+                <div class="card-content">
+                  <h2 class="name">Julie choregrapher</h2>
+                  <p class="description">
+                    Made using HTML, CSS, JavaScript and Netlify to deploy
+                  </p>
+
+                  <div class="card_btns">
+                    <a
+                      target="_blank"
+                      href="https://julie-dance.netlify.app/"
+                      class="btn live"
+                      ><span>Live</span>
+                      <i class="fa-solid fa-up-right-from-square"></i
+                    ></a>
+                    <a
+                      target="_blank"
+                      href="https://github.com/adriancnichifor/Julie"
+                      class="btn gh"
+                    >
+                      <span>Code</span><i class="fa-brands fa-github"></i
+                    ></a>
+                  </div>
+                </div>
+              </div>
+              <!-- Cammi project -->
+              <div class="card swiper-slide">
+                <div class="image-content">
+                  <span class="overlay"></span>
+
+                  <div class="card-image">
+                    <img src="assets/cammi.png" alt="" class="card-img" />
+                  </div>
+                </div>
+
+                <div class="card-content">
+                  <h2 class="name">CAMMI - Lawyer website</h2>
+                  <p class="description">
+                    Made using Bootstrap, JavaScript, Firebase and Netlify to
+                    deploy
+                  </p>
+
+                  <div class="card_btns">
+                    <a
+                      href="https://cammi.netlify.app/"
+                      target="_blank"
+                      class="btn"
+                      ><span>Live</span>
+                      <i class="fa-solid fa-up-right-from-square"></i
+                    ></a>
+                    <a
+                      href="https://github.com/adriancnichifor/cammi"
+                      target="_blank"
+                      class="btn"
+                      ><span>Code</span><i class="fa-brands fa-github"></i
+                    ></a>
+                  </div>
+                </div>
+              </div>
+              <!-- Weather project -->
+              <div class="card swiper-slide">
+                <div class="image-content">
+                  <span class="overlay"></span>
+
+                  <div class="card-image">
+                    <img
+                      src="assets/Weather.png"
+                      alt="weather app screenshot"
+                      class="card-img"
+                    />
+                  </div>
+                </div>
+
+                <div class="card-content">
+                  <h2 class="name">Weather app</h2>
+                  <p class="description">
+                    Made using HTML, CSS, JavaScript, OpenWeather, Google Maps
+                    and Netlify to deploy
+                  </p>
+
+                  <div class="card_btns">
+                    <a
+                      target="_blank"
+                      href="https://acn-weatherapp.netlify.app/"
+                      class="btn live"
+                      ><span>Live</span>
+                      <i class="fa-solid fa-up-right-from-square"></i
+                    ></a>
+                    <a
+                      target="_blank"
+                      href="https://github.com/adriancnichifor/WeatherApp"
+                      class="btn gh"
+                    >
+                      <span>Code</span><i class="fa-brands fa-github"></i
+                    ></a>
+                  </div>
+                </div>
+              </div>
+              <!-- Julie project -->
+              <div class="card swiper-slide">
+                <div class="image-content">
+                  <span class="overlay"></span>
+
+                  <div class="card-image">
+                    <img src="assets/julie.png" alt="" class="card-img" />
+                  </div>
+                </div>
+
+                <div class="card-content">
+                  <h2 class="name">Julie choregrapher</h2>
+                  <p class="description">
+                    Made using HTML, CSS, JavaScript and Netlify to deploy
+                  </p>
+
+                  <div class="card_btns">
+                    <a
+                      target="_blank"
+                      href="https://julie-dance.netlify.app/"
+                      class="btn live"
+                      ><span>Live</span>
+                      <i class="fa-solid fa-up-right-from-square"></i
+                    ></a>
+                    <a
+                      target="_blank"
+                      href="https://github.com/adriancnichifor/Julie"
+                      class="btn gh"
+                    >
+                      <span>Code</span><i class="fa-brands fa-github"></i
+                    ></a>
+                  </div>
+                </div>
+              </div>
+              <!-- Cammi project -->
+              <div class="card swiper-slide">
+                <div class="image-content">
+                  <span class="overlay"></span>
+
+                  <div class="card-image">
+                    <img src="assets/cammi.png" alt="" class="card-img" />
+                  </div>
+                </div>
+
+                <div class="card-content">
+                  <h2 class="name">CAMMI - Lawyer website</h2>
+                  <p class="description">
+                    Made using Bootstrap, JavaScript, Firebase and Netlify to
+                    deploy
+                  </p>
+
+                  <div class="card_btns">
+                    <a
+                      href="https://cammi.netlify.app/"
+                      target="_blank"
+                      class="btn"
+                      ><span>Live</span>
+                      <i class="fa-solid fa-up-right-from-square"></i
+                    ></a>
+                    <a
+                      href="https://github.com/adriancnichifor/cammi"
+                      target="_blank"
+                      class="btn"
+                      ><span>Code</span><i class="fa-brands fa-github"></i
+                    ></a>
+                  </div>
+                </div>
+              </div>
+              <!-- Weather project -->
+              <div class="card swiper-slide">
+                <div class="image-content">
+                  <span class="overlay"></span>
+
+                  <div class="card-image">
+                    <img
+                      src="assets/Weather.png"
+                      alt="weather app screenshot"
+                      class="card-img"
+                    />
+                  </div>
+                </div>
+
+                <div class="card-content">
+                  <h2 class="name">Weather app</h2>
+                  <p class="description">
+                    Made using HTML, CSS, JavaScript, OpenWeather, Google Maps
+                    and Netlify to deploy
+                  </p>
+
+                  <div class="card_btns">
+                    <a
+                      target="_blank"
+                      href="https://acn-weatherapp.netlify.app/"
+                      class="btn live"
+                      ><span>Live</span>
+                      <i class="fa-solid fa-up-right-from-square"></i
+                    ></a>
+                    <a
+                      target="_blank"
+                      href="https://github.com/adriancnichifor/WeatherApp"
+                      class="btn gh"
+                    >
+                      <span>Code</span><i class="fa-brands fa-github"></i
+                    ></a>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
         </div>
+        <!-- /swiper -->
+        <div class="swiper-button-next swiper-navBtn"></div>
+        <div class="swiper-button-prev swiper-navBtn"></div>
+        <div class="swiper-pagination"></div>
       </div>
     </section>
     <!-- End My work section -->
@@ -204,25 +374,23 @@
     <!-- Contact section -->
     <section class="contact" id="contact">
       <div class="container">
-        <h2 class="section_toptitle">Contact</h2>
-        <div class="row light">
-          <p>
-            Ready to work with me?<br />
-            Let`s chat! ->
-          </p>
+        <h3 class="section_toptitle">Contact</h3>
+        <h2 class="section_title light_text">
+          Ready to work with me?<br />
+          Let`s chat!
+        </h2>
 
-          <p>
-            Phone: <br />
-            <a class="link" href="tel:+40752407798"
-              ><strong>+4 0752 407 798</strong></a
+        <div class="contact_links light_text">
+          <!-- <p>Let`s chat! -></p> -->
+          <div class="contact_card">
+            <a class="link" href="tel:+40752407798">+4 0752 407 798</a>
+          </div>
+
+          <div class="contact_card">
+            <a class="link" href="mailto:adriancnichifor@gmail.com">
+              adriancnichifor@gmail.com</a
             >
-          </p>
-          <p>
-            Email: <br />
-            <a class="link" href="mailto:adriancnichifor@gmail.com"
-              ><strong>adriancnichifor@gmail.com</strong></a
-            >
-          </p>
+          </div>
         </div>
       </div>
     </section>
@@ -234,6 +402,9 @@
       <p><strong>ACN</strong> | All rights reserved &copy; 2024</p>
     </footer>
 
-    <script src="index.js"></script>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="js/index.js"></script>
   </body>
 </html>
