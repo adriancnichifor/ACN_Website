@@ -10,11 +10,11 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
     />
+    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <!-- Google Fonts -->
     <link
-      href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Oswald:wght@200..700&display=swap"
       rel="stylesheet"
     />
     <!-- Swipers CSS -->
@@ -42,7 +42,7 @@
               <a href="#work" class="nav__link">My work</a>
             </li>
             <li class="nav__item">
-              <a href="#contact" class="nav__link nav__link--button"
+              <a href="#contact" class="nav__link nav__link--button btn_action"
                 >Let`s talk</a
               >
             </li>
@@ -72,24 +72,26 @@
     <!-- Hero section -->
     <section class="hero" id="home">
       <div class="container row">
-        <div class="hero__text">
-          <h2 class="hero_toptitle">
-            Hey, I`m <strong class="dark_text">Adrian</strong>
-          </h2>
-          <h1 class="hero_title">Junior Web Developer</h1>
-          <p class="hero_subtitle">
+        <div class="section__text hero_text">
+          <h2>Hey, I`m Adrian</h2>
+          <h1>Junior Web Developer</h1>
+          <h3>
             Enthusiast Web developer with<br />
             a knack for problem-solving
-          </p>
-          <div>
+          </h3>
+          <div class="hero_btns">
             <a href="#contact" class="btn">Let`s talk</a>
             <a href="ACN_CV.pdf" download="ACN_CV" class="btn btn_action"
               >My CV</a
             >
           </div>
         </div>
-        <div class="hero_logo">
-          <img src="assets/logo-no-background.png" alt="" />
+        <div class="section__img">
+          <img
+            class="big_logo"
+            src="assets/logo-no-background.png"
+            alt="round ACN white logo"
+          />
         </div>
       </div>
     </section>
@@ -97,17 +99,16 @@
 
     <!-- About section -->
     <section class="about" id="about">
-      <div class="container">
-        <h3 class="section_toptitle">About</h3>
-        <h2 class="section_title container dark_text">Web developer journey</h2>
-        <div class="row">
-          <div class="portret_container">
-            <img
-              src="assets/portret.jpg"
-              alt="portrait of Adrian Nichifor"
-              class="about__img"
-            />
-          </div>
+      <div class="container row">
+        <div class="section__img">
+          <img
+            src="assets/portret.jpg"
+            alt="portrait of Adrian Nichifor"
+            class="about__img"
+          />
+        </div>
+        <div class="section__text dark_text">
+          <h3 class="section_title container">Web developer journey</h3>
           <div class="text_container">
             <p>
               Proficient in HTML and CSS, with a focus on JavaScript, I thrive
@@ -118,10 +119,10 @@
               project I am involved in.
             </p>
             <!-- <p>
-            As a Web Developer, I am highly focused on delivering high-quality,
-            user-friendly web applications that meet the needs of clients and
-            end users.
-          </p> -->
+          As a Web Developer, I am highly focused on delivering high-quality,
+          user-friendly web applications that meet the needs of clients and
+          end users.
+        </p> -->
             <p>
               In my spare time, you'll find me reading articles or watching
               videos about technology, cooking, cycling, or spending time with
@@ -138,12 +139,11 @@
     <!-- My work section -->
     <section class="work" id="work">
       <div class="container">
-        <h3 class="section_toptitle">My work</h3>
-        <h2 class="section_title container dark_text">
+        <h3 class="section_title container dark_text">
           Things I've built so far
-        </h2>
+        </h3>
         <!-- cards swiper -->
-        <div class="swiper">
+        <div class="swiper mobile">
           <div class="mySwiper">
             <div class="card-wrapper swiper-wrapper">
               <!-- Julie project -->
@@ -374,16 +374,12 @@
     <!-- Contact section -->
     <section class="contact" id="contact">
       <div class="container">
-        <h3 class="section_toptitle">Contact</h3>
-        <h2 class="section_title light_text">
-          Ready to work with me?<br />
-          Let`s chat!
-        </h2>
+        <h3 class="section_title light_text">Ready to work with me?</h3>
 
-        <div class="contact_links light_text">
+        <div class="contact_links">
           <!-- <p>Let`s chat! -></p> -->
           <div class="contact_card">
-            <a class="link" href="tel:+40752407798">+4 0752 407 798</a>
+            <a class="link" href="tel:+40752407798">+40 752 407 798</a>
           </div>
 
           <div class="contact_card">
@@ -399,11 +395,31 @@
 
     <!-- Footer -->
     <footer id="footer" class="footer light">
+      <div class="social_media">
+        <ul class="nav__list nav__list--secondary">
+          <li class="nav__item">
+            <a
+              href="https://www.linkedin.com/in/adriancnichifor/"
+              target="_blank"
+              class="nav__link"
+              ><i class="fa-brands fa-linkedin-in"></i
+            ></a>
+          </li>
+          <li class="nav__item">
+            <a
+              href="https://github.com/adriancnichifor/"
+              target="_blank"
+              class="nav__link"
+              ><i class="fa-brands fa-github"></i
+            ></a>
+          </li>
+        </ul>
+      </div>
       <p><strong>ACN</strong> | All rights reserved &copy; 2024</p>
     </footer>
 
     <!-- Swiper JS -->
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="js/swiper-bundle.min.js"></script>
     <!-- Custom JS -->
     <script src="js/index.js"></script>
   </body>
