@@ -70,12 +70,12 @@ img {
   background-color: var(--clr-yellow);
   color: var(--clr-dark);
   font-weight: 700;
+  margin-left: 5px;
 }
 
 .btn:hover,
 .btn:focus {
-  opacity: 0.8;
-  transform: scale(1.04);
+  transform: scale(1.09);
 }
 
 section {
@@ -217,7 +217,7 @@ header {
       rgba(0, 0, 0, 0.8) 0%,
       rgba(0, 0, 0, 0.2) 100%
     ),
-    url("/assets/hero.jpg");
+    url("/assets/hero.webp");
 }
 
 .hero_text {
